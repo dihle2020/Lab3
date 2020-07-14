@@ -1,0 +1,73 @@
+* {
+  background-color: powderblue;
+}
+
+h1 {
+  color: White;
+  font-family: verdana;
+  font-size: 300%;
+}
+
+h3 {
+  color: White;
+  font-family: verdana;
+
+}
+
+.user-list{
+  display:flex;
+  justify-content: center;
+  content-align: center;
+  padding: 10px;
+  color: black;
+  font-family: verdana;
+  border: 2px solid black;
+  width:250px;
+  height:50px;
+}
+
+.user-form-group{
+  background-color:grey;
+  display:flex;
+  justify-content: left;
+  content-align: left;
+  padding: 10px;
+  color: black;
+  font-family: verdana;
+  border: 2px solid black;
+  width:300px;
+  height:50px;
+  margin:10px;
+}
+
+label{
+
+  color: Black;
+  font-family: verdana;
+  background-color:grey;
+
+}
+
+#age{
+  color: black;
+  font-family: verdana;
+  margin-left:20%;
+}
+
+#id{
+  color: black;
+  font-family: verdana;
+  margin-left:20%;
+}
+
+#first_name{
+  color: black;
+  font-family: verdana;
+  margin-left:15%;
+}
+
+#submit{
+    padding:20px;
+    margin:40px;
+
+}

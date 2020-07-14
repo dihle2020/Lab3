@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit User</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/index.css') }}">
+</head>
+<body>
+
+<h1>Edit user: </h1>
+
+<form class="user-form" method="POST" action="/editUser">
+    {{ form.hidden_tag() }}
+
+    <div class="user-form-group">
+        {{ form.id.label }}:
+        {{ form.id }}
+        {% if form.id.errors %}
+            {% for error in form.id.errors %}
+                <p class="user-error-message">{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="user-form-group">
+        {{ form.first_name.label }}:
+        {{ form.first_name }}
+        {% if form.first_name.errors %}
+            {% for error in form.first_name.errors %}
+                <p class="user-error-message">{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="user-form-group">
+        {{ form.age.label }}:
+        {{ form.age }}
+        {% if form.age.errors %}
+            {% for error in form.age.errors %}
+                <p class="user-error-message">{{ error }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="user-form-submit">
+        {{ form.submit }}
+    </div>
+</form>
+
+</body>
+</html>

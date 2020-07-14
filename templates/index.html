@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 3</title>
+
+    <!-- Styles -->
+    <link href="{{ url_for('static', filename='./css/index.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>USER LIST:</h1>
+    <h3> User ID ---------> Name, Age</h3>
+    {% for user in users %}
+        <p class="user-list">ID: {{user.user_id}}: --------->{{ user.first_name }}, {{user.age}}</p>
+    {% endfor %}
+</body>
+</html>
